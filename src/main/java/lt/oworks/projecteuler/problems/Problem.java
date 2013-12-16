@@ -5,5 +5,5 @@ package lt.oworks.projecteuler.problems;
  * 
  */
 public abstract class Problem {
-	abstract public void solve();
+	abstract public String solve();
 }

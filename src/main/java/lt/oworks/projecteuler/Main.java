@@ -1,17 +1,15 @@
 package lt.oworks.projecteuler;
 
-import lt.oworks.projecteuler.problems.Problem1;
-
 /**
  * @author Ovidijus
- * 
+ *
  */
 public class Main {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+        System.out.print("Result is ");
+        System.out.println(SolverFactory.solveProblem(2));
 
-		new Problem1().solve();
-
-	}
+    }
 
 }

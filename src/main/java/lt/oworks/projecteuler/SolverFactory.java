@@ -17,7 +17,7 @@ public class SolverFactory {
         Object newInstance = forName.newInstance();
         Problem problem = (Problem) newInstance;
 
-        return problem.solve();
+        return problem.doSolve();
     }
 
     public static String solveProblem(final int pProblemId) throws ClassNotFoundException, InstantiationException, IllegalAccessException {

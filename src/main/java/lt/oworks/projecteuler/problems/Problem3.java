@@ -1,5 +1,7 @@
 package lt.oworks.projecteuler.problems;
 
+import lt.oworks.projecteuler.Utils;
+
 /**
  * Largest prime factor
  *
@@ -18,23 +20,11 @@ public class Problem3 extends Problem {
         final long inp = Math.round(sqrt);
 
         for (long l = inp; l > 2; l--) {
-            if (INPUT % l == 0 && isPrime(l)) {
+            if (INPUT % l == 0 && Utils.isPrime(l)) {
                 result = l;
                 break;
             }
         }
         return result.toString();
     }
-
-    private boolean isPrime(final long pNumber) {
-        boolean result = true;
-        for (long l = 2; l < pNumber; l++) {
-            if (pNumber % l == 0) {
-                result = false;
-                break;
-            }
-        }
-        return result;
-    }
-
 }

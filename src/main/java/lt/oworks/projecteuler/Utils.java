@@ -14,7 +14,7 @@ public class Utils {
 
     public static boolean isPrime(final long pNum) {
         final double tmp = Math.sqrt(pNum);
-        final long limit = Math.round(tmp);
+        final long limit = Math.round(tmp) + 1;
 
         boolean result = true;
         for (long i = 2; i < limit; i++) {

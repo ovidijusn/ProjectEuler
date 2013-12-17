@@ -1,5 +1,7 @@
 package lt.oworks.projecteuler.problems;
 
+import lt.oworks.projecteuler.Utils;
+
 /**
  * Largest palindrome product
  *
@@ -17,16 +19,12 @@ public class Problem4 extends Problem {
             for (int k = 100; k < 1000; k++) {
                 final int product = i * k;
                 if (isPalindrome(product)) {
-                    max = max(product, max);
+                    max = Utils.max(product, max);
                 }
             }
         }
 
         return Integer.toString(max);
-    }
-
-    private int max(final int pNum1, final int pNum2) {
-        return pNum1 > pNum2 ? pNum1 : pNum2;
     }
 
     private int reverse(final int pNumber) {

@@ -45,4 +45,11 @@ public class Utils {
         return result;
     }
 
+    public static long max(final long pNum1, final long pNum2) {
+        return pNum1 > pNum2 ? pNum1 : pNum2;
+    }
+
+    public static int max(final int pNum1, final int pNum2) {
+        return pNum1 > pNum2 ? pNum1 : pNum2;
+    }
 }

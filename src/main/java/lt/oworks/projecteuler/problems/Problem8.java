@@ -43,7 +43,7 @@ public class Problem8 extends Problem {
             int a4 = toInt(INPUT.charAt(i - 1));
             int a5 = toInt(INPUT.charAt(i - 0));
 
-            max = Utils.max(max, a1 * a2 * a3 * a4 * a5);
+            max = Utils.max(max, Utils.multiply(a1, a2, a3, a4, a5));
         }
 
         return Integer.toString(max);

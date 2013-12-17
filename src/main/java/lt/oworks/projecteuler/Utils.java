@@ -52,4 +52,36 @@ public class Utils {
     public static int max(final int pNum1, final int pNum2) {
         return pNum1 > pNum2 ? pNum1 : pNum2;
     }
+
+    public static long multiply(final long... pNums) {
+        long product = 1;
+        for (final long p : pNums) {
+            product *= p;
+        }
+        return product;
+    }
+
+    public static int multiply(final int... pNums) {
+        int product = 1;
+        for (final int p : pNums) {
+            product *= p;
+        }
+        return product;
+    }
+
+    public static long add(final long... pNums) {
+        long sum = 0;
+        for (final long p : pNums) {
+            sum += p;
+        }
+        return sum;
+    }
+
+    public static int add(final int... pNums) {
+        int sum = 0;
+        for (final int p : pNums) {
+            sum += p;
+        }
+        return sum;
+    }
 }

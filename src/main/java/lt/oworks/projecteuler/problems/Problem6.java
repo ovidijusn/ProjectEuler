@@ -4,13 +4,12 @@ import java.util.List;
 import lt.oworks.projecteuler.Utils;
 
 /**
- * Smallest multiple
+ * Sum square difference
  *
- * @see http://projecteuler.net/problem=5
- *
+ * @see http://projecteuler.net/problem=6
  * @author Ovidijus
  */
-public class Problem5 extends Problem {
+public class Problem6 extends Problem {
 
     private static final int LIMIT = 20;
 

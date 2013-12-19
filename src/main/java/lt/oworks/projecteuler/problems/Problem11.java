@@ -1,5 +1,7 @@
 package lt.oworks.projecteuler.problems;
 
+import lt.oworks.projecteuler.Utils;
+
 /**
  * Largest product in a grid
  *
@@ -45,7 +47,64 @@ public class Problem11 extends Problem {
             }
         }
 
+        max = Utils.max(max, maxHorizontal(matrix));
+        max = Utils.max(max, maxVertical(matrix));
+
+        max = Utils.max(max, maxDiaganol(matrix));
+        int[][] m = flip(matrix);
+        max = Utils.max(max, maxDiaganol(m));
+        m = flip(m);
+        max = Utils.max(max, maxDiaganol(m));
+        m = flip(m);
+        max = Utils.max(max, maxDiaganol(m));
+
         return Long.toString(max);
     }
 
+    private int maxHorizontal(final int[][] pMat) {
+        int max = 0;
+        for (int i = 0; i < SIZE; i++) {
+            for (int j = 3; j < SIZE; j++) {
+                max = Utils.max(max, Utils.multiply(pMat[i][j], pMat[i][j - 1], pMat[i][j - 2], pMat[i][j - 3]));
+            }
+        }
+        return max;
+    }
+
+    private int maxVertical(final int[][] pMat) {
+        int max = 0;
+        for (int i = 0; i < SIZE; i++) {
+            for (int j = 3; j < SIZE; j++) {
+                max = Utils.max(max, Utils.multiply(pMat[j][i], pMat[j - 1][i], pMat[j - 2][i], pMat[j - 3][i]));
+            }
+        }
+        return max;
+    }
+
+    private int maxDiaganol(final int[][] pMat) {
+        int max = 0;
+        for (int i = 0; i < SIZE - 3; i++) {
+            int n = 0;
+            for (int j = 0, k = i; isValid(j, k); j++, k++) {
+                if (n++ >= 3) {
+                    max = Utils.max(max, Utils.multiply(pMat[j][k], pMat[j - 1][k - 1], pMat[j - 2][k - 2], pMat[j - 3][k - 3]));
+                }
+            }
+        }
+        return max;
+    }
+
+    private boolean isValid(final int x, final int y) {
+        return x >= 0 && x < SIZE && y >= 0 && y < SIZE;
+    }
+
+    private int[][] flip(final int[][] pMat) {
+        final int[][] newMat = new int[SIZE][SIZE];
+        for (int i = 0; i < SIZE; i++) {
+            for (int j = 0; j < SIZE; j++) {
+                newMat[i][j] = pMat[i][SIZE - j - 1];
+            }
+        }
+        return newMat;
+    }
 }

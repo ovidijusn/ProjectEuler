@@ -1,7 +1,6 @@
 package lt.oworks.projecteuler.problems;
 
 import java.math.BigDecimal;
-import lt.oworks.projecteuler.Utils;
 
 /**
  * Power digit sum
@@ -22,9 +21,5 @@ public class Problem16 extends Problem {
         }
 
         return sum.toString();
-    }
-
-    private static BigDecimal binomial(final long a, final long b) {
-        return Utils.factorial(new BigDecimal(a)).divide(Utils.factorial(new BigDecimal(a - b)).multiply(Utils.factorial(new BigDecimal(a - b))));
     }
 }

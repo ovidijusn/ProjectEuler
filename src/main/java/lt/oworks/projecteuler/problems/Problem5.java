@@ -20,7 +20,7 @@ public class Problem5 extends Problem {
 
         for (long i = 1; i <= LIMIT; i++) {
             if (product % i != 0L) {
-                List<Long> factors = Utils.getPrimeFactors(i);
+                List<Long> factors = Utils.getPrimeDevisors(i);
                 for (final long fact : factors) {
                     product *= fact;
                     if (product % i == 0L) {

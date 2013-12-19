@@ -1,7 +1,10 @@
 package lt.oworks.projecteuler;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 /**
  *
@@ -26,7 +29,7 @@ public class Utils {
         return result;
     }
 
-    public static List<Long> getPrimeFactors(final long pNum) {
+    public static List<Long> getPrimeDevisors(final long pNum) {
         final List<Long> result = new ArrayList<>();
 
         long tmp = pNum;
@@ -43,6 +46,33 @@ public class Utils {
         }
 
         return result;
+    }
+
+    public static Set<Long> getDevisors(final long pNum) {
+        final Set<Long> result = new TreeSet<>();
+
+        for (long i = 1; i <= pNum; i++) {
+            if (pNum % i == 00) {
+                result.add(i);
+            }
+        }
+
+        return result;
+    }
+
+    public static int countDevisors(final long pNum) {
+        final double tmp = Math.sqrt(pNum);
+        final long limit = Math.round(tmp) + 1;
+
+        final Set<Long> divs = new HashSet<>();
+        for (long i = 1; i <= limit; i++) {
+            if (pNum % i == 0) {
+                divs.add(i);
+                divs.add(pNum / i);
+            }
+        }
+
+        return divs.size();
     }
 
     public static long max(final long pNum1, final long pNum2) {

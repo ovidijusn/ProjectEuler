@@ -1,5 +1,6 @@
 package lt.oworks.projecteuler;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -113,5 +114,21 @@ public class Utils {
             sum += p;
         }
         return sum;
+    }
+
+    public static long factorial(final long pNum) {
+        long result = 1;
+        for (long i = 1; i <= pNum; i++) {
+            result *= i;
+        }
+        return result;
+    }
+
+    public static BigDecimal factorial(final BigDecimal pNum) {
+        BigDecimal result = BigDecimal.ONE;
+        for (long i = 1; i <= pNum.longValue(); i++) {
+            result = result.multiply(new BigDecimal(i));
+        }
+        return result;
     }
 }

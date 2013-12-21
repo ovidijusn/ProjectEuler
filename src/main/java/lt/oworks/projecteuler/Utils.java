@@ -131,4 +131,13 @@ public class Utils {
         }
         return result;
     }
+
+    public static BigDecimal digitSum(final BigDecimal pNum) {
+        BigDecimal sum = BigDecimal.ZERO;
+        final char[] digits = pNum.toString().toCharArray();
+        for (final char digit : digits) {
+            sum = sum.add(new BigDecimal(Character.toString(digit)));
+        }
+        return sum;
+    }
 }

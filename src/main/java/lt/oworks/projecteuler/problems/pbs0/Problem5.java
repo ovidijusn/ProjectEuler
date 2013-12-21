@@ -1,7 +1,8 @@
-package lt.oworks.projecteuler.problems;
+package lt.oworks.projecteuler.problems.pbs0;
 
 import java.util.List;
 import lt.oworks.projecteuler.Utils;
+import lt.oworks.projecteuler.problems.Problem;
 
 /**
  * Smallest multiple

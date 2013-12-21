@@ -1,4 +1,6 @@
-package lt.oworks.projecteuler.problems;
+package lt.oworks.projecteuler.problems.pbs0;
+
+import lt.oworks.projecteuler.problems.Problem;
 
 /**
  * Even Fibonacci numbers

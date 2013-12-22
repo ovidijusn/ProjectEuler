@@ -1,7 +1,5 @@
 package lt.oworks.projecteuler.problems.pbs2;
 
-import java.math.BigDecimal;
-import lt.oworks.projecteuler.utils.Utils;
 import lt.oworks.projecteuler.problems.Problem;
 import lt.oworks.projecteuler.utils.Util;
 

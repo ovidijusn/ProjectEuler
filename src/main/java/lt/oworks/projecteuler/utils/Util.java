@@ -48,6 +48,14 @@ public class Util {
         return result;
     }
 
+    public static long addAll(final long... pNums) {
+        long sum = 0;
+        for (final long num : pNums) {
+            sum += num;
+        }
+        return sum;
+    }
+
     private Util() {
     }
 

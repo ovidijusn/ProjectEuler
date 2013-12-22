@@ -28,7 +28,15 @@ public class TestUtil {
         assertEquals(Util.findDivisors(220), arr3);
         long[] arr4 = {1, 2, 4, 71, 142, 284};
         assertEquals(Util.findDivisors(284), arr4);
+    }
 
+    @Test
+    public void testAddAll() {
+        long[] arr = {};
+        assertEquals(Util.addAll(), 0);
+        long[] arr2 = {1, 2};
+        assertEquals(Util.addAll(arr2), 3);
+        assertEquals(Util.addAll(1, 2, 3, 4, 5), 1 + 2 + 3 + 4 + 5);
     }
 
     public TestUtil() {

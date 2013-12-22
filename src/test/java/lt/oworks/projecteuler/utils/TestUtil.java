@@ -20,6 +20,7 @@ public class TestUtil {
 
         assertFalse(Util.isPrime(BigDecimal.ONE), "1 nera pirminis");
         assertTrue(Util.isPrime(new BigDecimal(2)), "2 - pirminis");
+        assertFalse(Util.isPrime(new BigDecimal(2)), "4 - nëra pirminis");
     }
 
     public TestUtil() {

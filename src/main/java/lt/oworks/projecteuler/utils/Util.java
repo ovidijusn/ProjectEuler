@@ -9,7 +9,9 @@ import java.math.BigDecimal;
 public class Util {
 
     public static boolean isPrime(final BigDecimal pNum) {
-        return false;
+        boolean result = pNum.compareTo(BigDecimal.ONE) == 1;
+
+        return result;
     }
 
     private Util() {

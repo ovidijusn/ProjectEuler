@@ -21,6 +21,8 @@ public class TestUtil {
         assertFalse(Util.isPrime(1), "1 nera pirminis");
         assertTrue(Util.isPrime(2), "2 - pirminis");
         assertFalse(Util.isPrime(4), "4 - nëra pirminis");
+        assertTrue(Util.isPrime(997), "997 - yra pirminis");
+        assertFalse(Util.isPrime(100), "100 - nera pirminis");
     }
 
     public TestUtil() {

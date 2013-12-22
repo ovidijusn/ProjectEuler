@@ -1,6 +1,6 @@
 package lt.oworks.projecteuler.problems.pbs0;
 
-import lt.oworks.projecteuler.Utils;
+import lt.oworks.projecteuler.utils.Utils;
 import lt.oworks.projecteuler.problems.Problem;
 
 /**

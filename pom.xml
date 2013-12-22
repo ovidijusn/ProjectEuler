@@ -5,9 +5,15 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>Project Euler</name>
     <description>Project Euler</description>
-    
+    <dependencies>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.8.7</version>
+        </dependency>
+    </dependencies>
     <properties>
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
-    </properties>  
+    </properties> 
 </project>

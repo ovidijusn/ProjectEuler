@@ -5,12 +5,12 @@ import lt.oworks.projecteuler.utils.Utils;
 import lt.oworks.projecteuler.problems.Problem;
 
 /**
- * Factorial digit sum
+ * Amicable numbers
  *
- * @see http://projecteuler.net/problem=20
+ * @see http://projecteuler.net/problem=21
  * @author Ovidijus
  */
-public class Problem20 extends Problem {
+public class Problem21 extends Problem {
 
     private static final BigDecimal INPUT = new BigDecimal(100);
 

@@ -2,7 +2,7 @@ package lt.oworks.projecteuler.problems.pbs1;
 
 import lt.oworks.projecteuler.problems.Problem;
 import java.math.BigDecimal;
-import lt.oworks.projecteuler.Utils;
+import lt.oworks.projecteuler.utils.Utils;
 
 /**
  * Lattice paths

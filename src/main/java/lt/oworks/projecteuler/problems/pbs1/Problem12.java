@@ -1,7 +1,7 @@
 package lt.oworks.projecteuler.problems.pbs1;
 
 import lt.oworks.projecteuler.problems.Problem;
-import lt.oworks.projecteuler.Utils;
+import lt.oworks.projecteuler.utils.Utils;
 
 /**
  * Highly divisible triangular number

@@ -1,4 +1,4 @@
-package lt.oworks.projecteuler;
+package lt.oworks.projecteuler.utils;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

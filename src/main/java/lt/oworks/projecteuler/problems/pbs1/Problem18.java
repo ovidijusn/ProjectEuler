@@ -3,7 +3,7 @@ package lt.oworks.projecteuler.problems.pbs1;
 import lt.oworks.projecteuler.problems.Problem;
 import java.util.ArrayList;
 import java.util.List;
-import lt.oworks.projecteuler.Utils;
+import lt.oworks.projecteuler.utils.Utils;
 
 /**
  * Maximum path sum I

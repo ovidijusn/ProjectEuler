@@ -1,15 +1,23 @@
 package lt.oworks.projecteuler.utils;
 
-import java.math.BigDecimal;
-
 /**
  *
  * @author Ovidijus
  */
 public class Util {
 
-    public static boolean isPrime(final BigDecimal pNum) {
-        boolean result = pNum.compareTo(BigDecimal.ONE) == 1;
+    public static boolean isPrime(final long pNum) {
+        boolean result = pNum > 1;
+
+        final double root = Math.sqrt(pNum);
+        final long limit = Math.round(root) + 1;
+
+        for (long i = 2; i < limit; i++) {
+            if (pNum % i == 0) {
+                result = false;
+                break;
+            }
+        }
 
         return result;
     }

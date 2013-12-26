@@ -39,6 +39,19 @@ public class TestUtil {
         assertEquals(Util.addAll(1, 2, 3, 4, 5), 1 + 2 + 3 + 4 + 5);
     }
 
+    @Test
+    public void testSsAbundant() {
+        final long[] abundants = {12, 18, 20, 24, 100};
+        final long[] nonAbundants = {11, 17, 11, 25, 99};
+        for (final long n : abundants) {
+            assertTrue(Util.isAbundant(n), n + " is abundant number.");
+        }
+
+        for (final long n : nonAbundants) {
+            assertFalse(Util.isAbundant(n), n + " isn't abundant number.");
+        }
+    }
+
     public TestUtil() {
     }
 

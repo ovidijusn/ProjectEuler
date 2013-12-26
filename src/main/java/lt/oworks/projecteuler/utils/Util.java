@@ -56,6 +56,12 @@ public class Util {
         return sum;
     }
 
+    public static boolean isAbundant(final long pNum) {
+        final long[] divs = findDivisors(pNum);
+
+        return pNum < addAll(divs) - pNum;
+    }
+
     private Util() {
     }
 

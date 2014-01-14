@@ -52,6 +52,21 @@ public class TestUtil {
         }
     }
 
+    @Test
+    public void testIsPandigital() {
+        assertTrue(Util.isPandigital(1, 1), "1");
+        assertTrue(Util.isPandigital(12, 2), "12");
+        assertTrue(Util.isPandigital(123, 3), "123");
+        assertTrue(Util.isPandigital(1234, 4), "1234");
+        assertTrue(Util.isPandigital(12345, 5), "12345");
+
+        assertFalse(Util.isPandigital(2, 1), "2");
+        assertFalse(Util.isPandigital(22, 2), "22");
+        assertFalse(Util.isPandigital(124, 3), "124");
+        assertFalse(Util.isPandigital(1111, 4), "1111");
+        assertFalse(Util.isPandigital(12355, 5), "12355");
+    }
+
     public TestUtil() {
     }
 

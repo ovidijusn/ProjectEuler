@@ -72,12 +72,12 @@ public class Util {
                 result = false;
                 break;
             } else {
-
+                digits[left - 1] = true;
+                tmp /= 10;
             }
         }
 
         return result;
-
     }
 
     private Util() {

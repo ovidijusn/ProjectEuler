@@ -1,7 +1,7 @@
 package lt.oworks.projecteuler.problems.pbs1;
 
 import lt.oworks.projecteuler.problems.Problem;
-import lt.oworks.projecteuler.utils.Utils;
+import lt.oworks.projecteuler.utils.Util;
 
 /**
  * Highly divisible triangular number
@@ -20,7 +20,7 @@ public class Problem12 extends Problem {
         long iter = 2;
 
         while (true) {
-            if (Utils.countDevisors(result) > 500) {
+            if (Util.countDivisors(result) > 500) {
                 break;
             }
             result += iter++;

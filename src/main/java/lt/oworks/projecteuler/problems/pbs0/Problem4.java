@@ -1,7 +1,7 @@
 package lt.oworks.projecteuler.problems.pbs0;
 
-import lt.oworks.projecteuler.utils.Utils;
 import lt.oworks.projecteuler.problems.Problem;
+import lt.oworks.projecteuler.utils.Util;
 
 /**
  * Largest palindrome product
@@ -20,7 +20,7 @@ public class Problem4 extends Problem {
             for (int k = 100; k < 1000; k++) {
                 final int product = i * k;
                 if (isPalindrome(product)) {
-                    max = Utils.max(product, max);
+                    max = Util.max(product, max);
                 }
             }
         }

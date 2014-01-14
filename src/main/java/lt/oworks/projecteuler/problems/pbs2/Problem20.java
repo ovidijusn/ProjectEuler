@@ -1,7 +1,7 @@
 package lt.oworks.projecteuler.problems.pbs2;
 
 import java.math.BigDecimal;
-import lt.oworks.projecteuler.utils.Utils;
+import lt.oworks.projecteuler.utils.Util;
 import lt.oworks.projecteuler.problems.Problem;
 
 /**
@@ -16,9 +16,9 @@ public class Problem20 extends Problem {
 
     @Override
     public String solve() {
-        final BigDecimal factor = Utils.factorial(INPUT);
+        final BigDecimal factor = Util.factorial(INPUT);
 
-        return Utils.digitSum(factor).toString();
+        return Util.digitSum(factor).toString();
     }
 
 }

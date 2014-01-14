@@ -1,8 +1,7 @@
 package lt.oworks.projecteuler.problems.pbs0;
 
-import java.util.List;
-import lt.oworks.projecteuler.utils.Utils;
 import lt.oworks.projecteuler.problems.Problem;
+import lt.oworks.projecteuler.utils.Util;
 
 /**
  * Smallest multiple
@@ -21,7 +20,7 @@ public class Problem5 extends Problem {
 
         for (long i = 1; i <= LIMIT; i++) {
             if (product % i != 0L) {
-                List<Long> factors = Utils.getPrimeDevisors(i);
+                final long[] factors = Util.findPrimeDivisors(i);
                 for (final long fact : factors) {
                     product *= fact;
                     if (product % i == 0L) {

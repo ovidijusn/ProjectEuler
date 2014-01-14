@@ -1,7 +1,7 @@
 package lt.oworks.projecteuler.problems.pbs1;
 
 import lt.oworks.projecteuler.problems.Problem;
-import lt.oworks.projecteuler.utils.Utils;
+import lt.oworks.projecteuler.utils.Util;
 
 /**
  * Summation of primes
@@ -19,7 +19,7 @@ public class Problem10 extends Problem {
         long sum = 2;
 
         for (long i = 3; i < LIMIT-1; i+=2) {
-            if (Utils.isPrime(i)) {
+            if (Util.isPrime(i)) {
                 sum += i;
             }
         }

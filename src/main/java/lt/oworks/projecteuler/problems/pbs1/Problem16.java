@@ -2,7 +2,7 @@ package lt.oworks.projecteuler.problems.pbs1;
 
 import lt.oworks.projecteuler.problems.Problem;
 import java.math.BigDecimal;
-import lt.oworks.projecteuler.utils.Utils;
+import lt.oworks.projecteuler.utils.Util;
 
 /**
  * Power digit sum
@@ -17,6 +17,6 @@ public class Problem16 extends Problem {
     @Override
     public String solve() {
         final BigDecimal power = new BigDecimal(2).pow(POWER);
-        return Utils.digitSum(power).toString();
+        return Util.digitSum(power).toString();
     }
 }

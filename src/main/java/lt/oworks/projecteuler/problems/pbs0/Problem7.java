@@ -1,7 +1,8 @@
 package lt.oworks.projecteuler.problems.pbs0;
 
-import lt.oworks.projecteuler.utils.Utils;
+
 import lt.oworks.projecteuler.problems.Problem;
+import lt.oworks.projecteuler.utils.Util;
 
 /**
  * 10001st prime
@@ -20,7 +21,7 @@ public class Problem7 extends Problem {
 
         while (counter < LIMIT) {
             prime++;
-            if (Utils.isPrime(prime)) {
+            if (Util.isPrime(prime)) {
                 counter++;
             }
         }

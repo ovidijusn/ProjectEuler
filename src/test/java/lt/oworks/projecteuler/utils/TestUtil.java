@@ -1,5 +1,6 @@
 package lt.oworks.projecteuler.utils;
 
+import java.math.BigDecimal;
 import static org.testng.Assert.*;
 import org.testng.annotations.Test;
 
@@ -65,6 +66,39 @@ public class TestUtil {
         assertFalse(Util.isPandigital(124, 3), "124");
         assertFalse(Util.isPandigital(1111, 4), "1111");
         assertFalse(Util.isPandigital(12355, 5), "12355");
+    }
+
+    @Test
+    public void testFindPrimeDivisors() {
+        assertEquals(Util.findPrimeDivisors(6), new long[]{2, 3});
+        assertEquals(Util.findPrimeDivisors(30), new long[]{2, 3, 5});
+        assertEquals(Util.findPrimeDivisors(7), new long[]{7});
+    }
+
+    @Test
+    public void testMultiplyAll() {
+        assertEquals(Util.multiplyAll(1, 2, 3), 6);
+        assertEquals(Util.multiplyAll(1, 2, 3, 4), 24);
+        assertEquals(Util.multiplyAll(1, 2, -3), -6);
+        assertEquals(Util.multiplyAll(1, 2, 3, 0), 0);
+    }
+
+    @Test
+    public void testCountDivisors() {
+        assertEquals(Util.countDivisors(10), 4);
+        assertEquals(Util.countDivisors(5), 2);
+    }
+
+    @Test
+    public void testDigitSum() {
+        assertEquals(Util.factorial(BigDecimal.ONE), BigDecimal.ONE);
+        assertEquals(Util.factorial(new BigDecimal(3)), new BigDecimal(6));
+    }
+
+    @Test
+    public void testFactorial() {
+        assertEquals(Util.digitSum(BigDecimal.ONE), BigDecimal.ONE);
+        assertEquals(Util.digitSum(new BigDecimal(315)), new BigDecimal(9));
     }
 
     public TestUtil() {

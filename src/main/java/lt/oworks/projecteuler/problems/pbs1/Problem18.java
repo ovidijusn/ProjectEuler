@@ -3,7 +3,7 @@ package lt.oworks.projecteuler.problems.pbs1;
 import lt.oworks.projecteuler.problems.Problem;
 import java.util.ArrayList;
 import java.util.List;
-import lt.oworks.projecteuler.utils.Utils;
+import lt.oworks.projecteuler.utils.Util;
 
 /**
  * Maximum path sum I
@@ -38,7 +38,7 @@ public class Problem18 extends Problem {
         int sum = 0;
         doSearch(INPUT, 0, 0, 0);
         for (final int s : sums) {
-            sum = Utils.max(sum, s);
+            sum = Util.max(sum, s);
         }
         return Integer.toString(sum);
     }

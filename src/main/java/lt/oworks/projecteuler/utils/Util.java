@@ -1,5 +1,9 @@
 package lt.oworks.projecteuler.utils;
 
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -78,6 +82,87 @@ public class Util {
         }
 
         return result;
+    }
+
+    public static int max(final int pNum1, final int pNum2) {
+        return pNum1 > pNum2 ? pNum1 : pNum2;
+    }
+
+    public static long max(final long pNum1, final long pNum2) {
+        return pNum1 > pNum2 ? pNum1 : pNum2;
+    }
+
+    public static long[] findPrimeDivisors(final long pNum) {
+        long div = 2;
+        final List<Long> primes = new ArrayList<>();
+        while (div <= pNum) {
+            if (pNum % div == 0 && isPrime(div)) {
+                primes.add(div);
+            }
+            div++;
+        }
+
+        final long[] rez = new long[primes.size()];
+        for (int i = 0; i < rez.length; i++) {
+            rez[i] = primes.get(i);
+        }
+        return rez;
+    }
+
+    public static long multiplyAll(final long... pFactors) {
+
+        long product = 1;
+        for (final long factor : pFactors) {
+            product *= factor;
+        }
+        return product;
+    }
+
+    public static int multiplyAll(final int... pFactors) {
+
+        int product = 1;
+        for (final int factor : pFactors) {
+            product *= factor;
+        }
+        return product;
+    }
+
+    public static int countDivisors(final long pNum) {
+        final double tmp = Math.sqrt(pNum);
+        final long limit = Math.round(tmp) + 1;
+
+        final Set<Long> divs = new HashSet<>();
+        for (long i = 1; i <= limit; i++) {
+            if (pNum % i == 0) {
+                divs.add(i);
+                divs.add(pNum / i);
+            }
+        }
+
+        return divs.size();
+    }
+
+    public static BigDecimal factorial(final BigDecimal pNum) {
+
+        BigDecimal rez = BigDecimal.ONE;
+        BigDecimal factor = BigDecimal.ONE;
+        while (factor.compareTo(pNum) < 1) {
+            rez = rez.multiply(factor);
+            factor = factor.add(BigDecimal.ONE);
+        }
+
+        return rez;
+    }
+
+    public static BigDecimal digitSum(final BigDecimal pNum) {
+
+        BigDecimal rez = BigDecimal.ZERO;
+        final String num = pNum.toString();
+        for (int i = 0; i < num.length(); i++) {
+            rez = rez.add(new BigDecimal(Character.toString(num.charAt(i))));
+        }
+
+        return rez;
     }
 
     private Util() {

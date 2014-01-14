@@ -56,6 +56,25 @@ public class Util {
         return sum;
     }
 
+    public static boolean isPandigital(final long pNum, final int pBase) {
+        boolean result = true;
+        final boolean[] digits = new boolean[pBase];
+
+        long tmp = pNum;
+
+        while (tmp > 0) {
+            final int left = (int)(tmp % 10);
+            if (left > pBase || left == 0 || digits[left - 1]) {
+                result = false;
+                break;
+            } else {
+
+            }
+        }
+
+        return result;
+    }
+
     private Util() {
     }
 

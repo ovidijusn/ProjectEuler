@@ -26,6 +26,7 @@ public class Problem26 extends Problem {
             second = second.add(tmp);
             n++;
         }
+        
 
         return Long.toString(n);
     }

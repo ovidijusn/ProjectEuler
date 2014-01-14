@@ -69,16 +69,19 @@ public class Util {
         final boolean[] digits = new boolean[pBase];
 
         long tmp = pNum;
-
-        while (tmp > 0) {
-            final int left = (int) (tmp % 10);
-            if (left > pBase || left == 0 || digits[left - 1]) {
-                result = false;
-                break;
-            } else {
-                digits[left - 1] = true;
-                tmp /= 10;
+        if (Long.toString(pNum).length() == pBase) {
+            while (tmp > 0) {
+                final int left = (int) (tmp % 10);
+                if (left > pBase || left == 0 || digits[left - 1]) {
+                    result = false;
+                    break;
+                } else {
+                    digits[left - 1] = true;
+                    tmp /= 10;
+                }
             }
+        } else {
+            result = false;
         }
 
         return result;

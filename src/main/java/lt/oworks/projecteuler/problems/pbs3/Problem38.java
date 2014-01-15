@@ -11,7 +11,7 @@ import lt.oworks.projecteuler.utils.Util;
  */
 public class Problem38 extends Problem {
 
-    private static final long LIMIT = 987_654_321;
+    private static final long LIMIT = 10_000;
 
     @Override
     public String solve() {
@@ -19,8 +19,8 @@ public class Problem38 extends Problem {
 
         for (long n = 1; n < LIMIT; n++) {
             final StringBuilder product = new StringBuilder();
-
-            for (int i = 1;; i++) {
+            product.append(n);
+            for (int i = 2;; i++) {
                 product.append(i * n);
                 final int len = product.length();
                 if (len < 10) {

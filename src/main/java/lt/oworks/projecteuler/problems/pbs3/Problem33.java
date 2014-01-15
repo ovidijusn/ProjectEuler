@@ -34,7 +34,6 @@ public class Problem33 extends Problem {
 
                         if (a * j == b * i) {
                             System.out.println(i + "/" + j);
-                            final int dbd = Util.dbd(i, j);
                             product1 *= i;
                             product2 *= j;
                         }

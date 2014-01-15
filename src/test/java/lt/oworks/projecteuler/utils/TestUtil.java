@@ -118,6 +118,12 @@ public class TestUtil {
         assertEquals(Util.toDigits(120), new int[]{0, 2, 1});
     }
 
+    @Test
+    public void testShiftDigits() {
+        assertEquals(Util.shiftDigits(123), 312);
+        assertEquals(Util.shiftDigits(1), 1);
+    }
+
     public TestUtil() {
     }
 

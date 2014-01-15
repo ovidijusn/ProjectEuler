@@ -196,6 +196,17 @@ public class Util {
         return digits;
     }
 
+    public static long shiftDigits(final long pNum) {
+        final long lastDigit = pNum % 10;
+        final long left = pNum / 10;
+        long base = 1;
+        while (left / base > 0) {
+            base *= 10;
+        }
+
+        return lastDigit * base + left;
+    }
+
     private Util() {
     }
 

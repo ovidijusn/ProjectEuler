@@ -176,6 +176,17 @@ public class Util {
         return rezult;
     }
 
+    public static int[] toDigits(final long pNum1) {
+        final int[] digits = new int[Long.toString(pNum1).length()];
+        long tmp = pNum1;
+        int i = 0;
+        while (tmp > 0) {
+            digits[i++] = (int) (tmp % 10);
+            tmp /= 10;
+        }
+        return digits;
+    }
+
     private Util() {
     }
 

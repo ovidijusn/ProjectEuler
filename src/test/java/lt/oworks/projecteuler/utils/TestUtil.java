@@ -108,6 +108,13 @@ public class TestUtil {
         assertEquals(Util.dbd(30, 45), 15);
     }
 
+    @Test
+    public void testToDigits() {
+        assertEquals(Util.toDigits(1), new int[]{1});
+        assertEquals(Util.toDigits(12), new int[]{2,1});
+        assertEquals(Util.toDigits(120), new int[]{0,2,1});
+    }
+
     public TestUtil() {
     }
 

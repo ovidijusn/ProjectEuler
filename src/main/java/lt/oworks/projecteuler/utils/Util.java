@@ -168,6 +168,14 @@ public class Util {
         return rez;
     }
 
+    public static int dbd(final int pNum1, final int pNum2) {
+        int rezult = pNum1;
+        if (pNum2 > 0) {
+            rezult = dbd(pNum2, pNum1 % pNum2);
+        }
+        return rezult;
+    }
+
     private Util() {
     }
 

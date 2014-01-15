@@ -101,6 +101,13 @@ public class TestUtil {
         assertEquals(Util.digitSum(new BigDecimal(315)), new BigDecimal(9));
     }
 
+    @Test
+    public void testDbd() {
+        assertEquals(Util.dbd(3, 6), 3);
+        assertEquals(Util.dbd(3, 0), 3);
+        assertEquals(Util.dbd(30, 45), 15);
+    }
+
     public TestUtil() {
     }
 

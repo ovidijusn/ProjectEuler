@@ -124,6 +124,13 @@ public class TestUtil {
         assertEquals(Util.shiftDigits(1), 1);
     }
 
+    @Test
+    public void testIsPalindrome() {
+        assertTrue(Util.isPalindrome(585, 10));
+        assertTrue(Util.isPalindrome(585, 2));
+        assertFalse(Util.isPalindrome(586, 10));
+    }
+
     public TestUtil() {
     }
 

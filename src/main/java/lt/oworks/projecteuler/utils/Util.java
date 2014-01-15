@@ -207,6 +207,13 @@ public class Util {
         return lastDigit * base + left;
     }
 
+    public static boolean isPalindrome(final long pNum, final int pBase) {
+        final String number = Long.toString(pNum, pBase);
+        final String reversed = new StringBuilder(number).reverse().toString();
+
+        return number.equals(reversed);
+    }
+
     private Util() {
     }
 

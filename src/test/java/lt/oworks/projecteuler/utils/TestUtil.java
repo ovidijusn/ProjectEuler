@@ -97,8 +97,11 @@ public class TestUtil {
 
     @Test
     public void testFactorial() {
-        assertEquals(Util.digitSum(BigDecimal.ONE), BigDecimal.ONE);
-        assertEquals(Util.digitSum(new BigDecimal(315)), new BigDecimal(9));
+        assertEquals(Util.factorial(BigDecimal.ONE), BigDecimal.ONE);
+        assertEquals(Util.factorial(new BigDecimal(3)), new BigDecimal(6));
+
+        assertEquals(Util.factorial(1), 1);
+        assertEquals(Util.factorial(3), 6);
     }
 
     @Test
@@ -111,8 +114,8 @@ public class TestUtil {
     @Test
     public void testToDigits() {
         assertEquals(Util.toDigits(1), new int[]{1});
-        assertEquals(Util.toDigits(12), new int[]{2,1});
-        assertEquals(Util.toDigits(120), new int[]{0,2,1});
+        assertEquals(Util.toDigits(12), new int[]{2, 1});
+        assertEquals(Util.toDigits(120), new int[]{0, 2, 1});
     }
 
     public TestUtil() {

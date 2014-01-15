@@ -157,6 +157,15 @@ public class Util {
         return rez;
     }
 
+    public static long factorial(final long pNum) {
+        long rez = 1;
+        for (long factor = 1; factor <= pNum; factor++) {
+            rez *= factor;
+        }
+
+        return rez;
+    }
+
     public static BigDecimal digitSum(final BigDecimal pNum) {
 
         BigDecimal rez = BigDecimal.ZERO;

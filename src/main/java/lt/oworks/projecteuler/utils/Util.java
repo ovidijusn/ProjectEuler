@@ -67,24 +67,23 @@ public class Util {
     public static boolean isPandigital(final long pNum, final int pBase) {
         boolean result = true;
         final boolean[] digits = new boolean[pBase];
+        int count = 0;
 
         long tmp = pNum;
-        if (Long.toString(pNum).length() == pBase) {
-            while (tmp > 0) {
-                final int left = (int) (tmp % 10);
-                if (left > pBase || left == 0 || digits[left - 1]) {
-                    result = false;
-                    break;
-                } else {
-                    digits[left - 1] = true;
-                    tmp /= 10;
-                }
-            }
-        } else {
-            result = false;
-        }
+        while (tmp > 0) {
+            final int digit = (int) (tmp % 10);
+            tmp /= 10;
 
-        return result;
+            if (digit == 0 || digit > pBase || digits[digit - 1]) {
+                result = false;
+                break;
+            } else {
+                digits[digit - 1] = true;
+                count++;
+            }
+        }
+        return result && count == pBase;
+
     }
 
     public static int max(final int pNum1, final int pNum2) {

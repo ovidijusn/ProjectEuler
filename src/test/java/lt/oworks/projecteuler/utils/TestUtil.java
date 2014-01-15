@@ -17,6 +17,7 @@ public class TestUtil {
         assertFalse(Util.isPrime(4), "4 - nëra pirminis");
         assertTrue(Util.isPrime(997), "997 - yra pirminis");
         assertFalse(Util.isPrime(100), "100 - nera pirminis");
+        assertFalse(Util.isPrime(0), "0 - nera pirminis");
     }
 
     @Test
@@ -129,6 +130,12 @@ public class TestUtil {
         assertTrue(Util.isPalindrome(585, 10));
         assertTrue(Util.isPalindrome(585, 2));
         assertFalse(Util.isPalindrome(586, 10));
+    }
+
+    @Test
+    public void testTruncateNumber() {
+        assertEquals(Util.truncateNumber(123, true), 12);
+        assertEquals(Util.truncateNumber(123, false), 23);
     }
 
     public TestUtil() {

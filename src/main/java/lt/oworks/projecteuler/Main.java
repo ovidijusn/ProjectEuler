@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 
-        final String result = SolverFactory.solveProblem(36);
+        final String result = SolverFactory.solveProblem(37);
 
         System.out.println("Result is " + result);
     }

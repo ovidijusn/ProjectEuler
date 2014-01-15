@@ -214,6 +214,23 @@ public class Util {
         return number.equals(reversed);
     }
 
+    public static long truncateNumber(final long pNum, final boolean pFromRight) {
+        long result = 0;
+        if (pFromRight) {
+            result = pNum / 10;
+        } else {
+            long base = 1;
+
+            while (pNum % base != pNum) {
+                base *= 10;
+            }
+
+            result = pNum % (base / 10);
+        }
+
+        return result;
+    }
+
     private Util() {
     }
 

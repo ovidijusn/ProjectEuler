@@ -33,7 +33,6 @@ public class Problem33 extends Problem {
                         final int b = removeDigit(j, digit);
 
                         if (a * j == b * i) {
-                            System.out.println(i + "/" + j);
                             product1 *= i;
                             product2 *= j;
                         }

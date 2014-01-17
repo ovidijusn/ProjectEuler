@@ -3,6 +3,7 @@ package lt.oworks.projecteuler.problems.pbs3;
 import java.util.HashSet;
 import java.util.Set;
 import lt.oworks.projecteuler.problems.Problem;
+import lt.oworks.projecteuler.utils.Digits;
 import lt.oworks.projecteuler.utils.Util;
 
 /**
@@ -29,7 +30,7 @@ public class Problem32 extends Problem {
                 } else if (tmp.length() > BASE) {
                     break;
                 }
-                if (Util.isPandigital(Long.parseLong(tmp), BASE)) {
+                if (Digits.isPandigital(Long.parseLong(tmp), BASE)) {
                     products.add(product);
                 }
             }

@@ -1,6 +1,8 @@
 package lt.oworks.projecteuler.problems.pbs3;
 
 import lt.oworks.projecteuler.problems.Problem;
+import lt.oworks.projecteuler.utils.Digits;
+import lt.oworks.projecteuler.utils.Operation;
 import lt.oworks.projecteuler.utils.Util;
 
 /**
@@ -11,7 +13,7 @@ import lt.oworks.projecteuler.utils.Util;
  */
 public class Problem34 extends Problem {
 
-    private static final long LIMIT = Util.factorial(9) * 7;
+    private static final long LIMIT = Operation.factorial(9) * 7;
 
     @Override
     public String solve() {
@@ -19,12 +21,12 @@ public class Problem34 extends Problem {
 
         final long[] facts = new long[10];
         for (int i = 0; i < facts.length; i++) {
-            facts[i] = Util.factorial(i);
+            facts[i] = Operation.factorial(i);
         }
 
         loop:
         for (long i = 3; i <= LIMIT; i++) {
-            final int[] digits = Util.toDigits(i);
+            final int[] digits = Digits.toDigits(i);
             long s = 0;
             for (int digit : digits) {
                 s += facts[digit];

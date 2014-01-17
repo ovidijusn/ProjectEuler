@@ -4,9 +4,9 @@ package lt.oworks.projecteuler.utils;
  *
  * @author Ovidijus
  */
-public class Util {
+public class UtilNGTest {
 
-    private Util() {
+    public UtilNGTest() {
     }
 
 }

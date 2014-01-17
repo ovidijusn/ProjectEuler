@@ -1,6 +1,7 @@
 package lt.oworks.projecteuler.problems.pbs0;
 
 import lt.oworks.projecteuler.problems.Problem;
+import lt.oworks.projecteuler.utils.Operation;
 import lt.oworks.projecteuler.utils.Util;
 
 /**
@@ -20,7 +21,7 @@ public class Problem4 extends Problem {
             for (int k = 100; k < 1000; k++) {
                 final int product = i * k;
                 if (isPalindrome(product)) {
-                    max = Util.max(product, max);
+                    max = Operation.max(product, max);
                 }
             }
         }

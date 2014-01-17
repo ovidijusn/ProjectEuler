@@ -3,6 +3,7 @@ package lt.oworks.projecteuler.problems.pbs2;
 import java.util.LinkedList;
 import java.util.List;
 import lt.oworks.projecteuler.problems.Problem;
+import lt.oworks.projecteuler.utils.Division;
 import lt.oworks.projecteuler.utils.Util;
 
 /**
@@ -19,7 +20,7 @@ public class Problem23 extends Problem {
     public String solve() {
         final List<Long> tmp = new LinkedList<>();
         for (long i = 12; i <= LIMIT; i++) {
-            if (Util.isAbundant(i)) {
+            if (Division.isAbundant(i)) {
                 tmp.add(i);
             }
         }

@@ -1,6 +1,8 @@
 package lt.oworks.projecteuler.problems.pbs3;
 
 import lt.oworks.projecteuler.problems.Problem;
+import lt.oworks.projecteuler.utils.Digits;
+import lt.oworks.projecteuler.utils.Division;
 import lt.oworks.projecteuler.utils.Util;
 
 /**
@@ -18,15 +20,15 @@ public class Problem35 extends Problem {
         long count = 0;
 
         for (int i = 2; i < LIMIT; i++) {
-            if (Util.isPrime(i)) {
-                long shifted = Util.shiftDigits(i);
+            if (Division.isPrime(i)) {
+                long shifted = Digits.shiftDigits(i);
                 boolean isCircular = true;
                 while (shifted != i) {
-                    if (!Util.isPrime(shifted)) {
+                    if (!Division.isPrime(shifted)) {
                         isCircular = false;
                         break;
                     }
-                    shifted = Util.shiftDigits(shifted);
+                    shifted = Digits.shiftDigits(shifted);
                 }
                 if (isCircular) {
                     count++;

@@ -1,6 +1,7 @@
 package lt.oworks.projecteuler.problems.pbs0;
 
 import lt.oworks.projecteuler.problems.Problem;
+import lt.oworks.projecteuler.utils.Division;
 import lt.oworks.projecteuler.utils.Util;
 
 /**
@@ -20,7 +21,7 @@ public class Problem5 extends Problem {
 
         for (long i = 1; i <= LIMIT; i++) {
             if (product % i != 0L) {
-                final long[] factors = Util.findPrimeDivisors(i);
+                final long[] factors = Division.findPrimeDivisors(i);
                 for (final long fact : factors) {
                     product *= fact;
                     if (product % i == 0L) {

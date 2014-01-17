@@ -1,6 +1,7 @@
 package lt.oworks.projecteuler.problems.pbs2;
 
 import lt.oworks.projecteuler.problems.Problem;
+import lt.oworks.projecteuler.utils.Division;
 import lt.oworks.projecteuler.utils.Util;
 
 /**
@@ -20,7 +21,7 @@ public class Problem27 extends Problem {
         for (int a = -(LIMIT - 1); a < LIMIT; a++) {
             for (int b = -(LIMIT - 1); b < LIMIT; b++) {
                 int n = 0;
-                while (Util.isPrime(formula(a, b, n))) {
+                while (Division.isPrime(formula(a, b, n))) {
                     n++;
                 }
                 if (n > len) {

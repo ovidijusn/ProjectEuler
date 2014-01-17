@@ -1,6 +1,7 @@
 package lt.oworks.projecteuler.problems.pbs1;
 
 import lt.oworks.projecteuler.problems.Problem;
+import lt.oworks.projecteuler.utils.Division;
 import lt.oworks.projecteuler.utils.Util;
 
 /**
@@ -19,7 +20,7 @@ public class Problem10 extends Problem {
         long sum = 2;
 
         for (long i = 3; i < LIMIT - 1; i += 2) {
-            if (Util.isPrime(i)) {
+            if (Division.isPrime(i)) {
                 sum += i;
             }
         }

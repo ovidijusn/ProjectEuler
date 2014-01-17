@@ -1,6 +1,7 @@
 package lt.oworks.projecteuler.problems.pbs0;
 
 import lt.oworks.projecteuler.problems.Problem;
+import lt.oworks.projecteuler.utils.Division;
 import lt.oworks.projecteuler.utils.Util;
 
 /**
@@ -21,7 +22,7 @@ public class Problem3 extends Problem {
         final long inp = Math.round(sqrt);
 
         for (long l = inp; l > 2; l--) {
-            if (INPUT % l == 0 && Util.isPrime(l)) {
+            if (INPUT % l == 0 && Division.isPrime(l)) {
                 result = l;
                 break;
             }

@@ -1,6 +1,8 @@
 package lt.oworks.projecteuler.problems.pbs3;
 
 import lt.oworks.projecteuler.problems.Problem;
+import lt.oworks.projecteuler.utils.Digits;
+import lt.oworks.projecteuler.utils.Division;
 import lt.oworks.projecteuler.utils.Util;
 
 /**
@@ -21,21 +23,21 @@ public class Problem37 extends Problem {
         loop:
         while (count < LIMIT) {
             num++;
-            if (Util.isPrime(num)) {
-                long tmp = Util.truncateNumber(num, true);
+            if (Division.isPrime(num)) {
+                long tmp = Digits.truncateNumber(num, true);
                 while (tmp > 0) {
-                    if (!Util.isPrime(tmp)) {
+                    if (!Division.isPrime(tmp)) {
                         continue loop;
                     }
-                    tmp = Util.truncateNumber(tmp, true);
+                    tmp = Digits.truncateNumber(tmp, true);
                 }
 
-                tmp = Util.truncateNumber(num, false);
+                tmp = Digits.truncateNumber(num, false);
                 while (tmp > 0) {
-                    if (!Util.isPrime(tmp)) {
+                    if (!Division.isPrime(tmp)) {
                         continue loop;
                     }
-                    tmp = Util.truncateNumber(tmp, false);
+                    tmp = Digits.truncateNumber(tmp, false);
                 }
                 sum += num;
                 count++;

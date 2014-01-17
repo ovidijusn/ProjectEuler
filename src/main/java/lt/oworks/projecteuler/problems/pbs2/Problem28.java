@@ -1,6 +1,7 @@
 package lt.oworks.projecteuler.problems.pbs2;
 
 import lt.oworks.projecteuler.problems.Problem;
+import lt.oworks.projecteuler.utils.Operation;
 import lt.oworks.projecteuler.utils.Util;
 
 /**
@@ -16,7 +17,7 @@ public class Problem28 extends Problem {
     @Override
     public String solve() {
 
-        return Long.toString(Util.addAll(diagonal1(LIMIT)) + Util.addAll(diagonal2(LIMIT)) - 1);
+        return Long.toString(Operation.addAll(diagonal1(LIMIT)) + Operation.addAll(diagonal2(LIMIT)) - 1);
     }
 
     private long[] diagonal1(final int pSize) {

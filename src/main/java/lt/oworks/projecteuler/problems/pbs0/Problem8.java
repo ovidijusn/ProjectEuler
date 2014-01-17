@@ -1,7 +1,7 @@
 package lt.oworks.projecteuler.problems.pbs0;
 
 import lt.oworks.projecteuler.problems.Problem;
-import lt.oworks.projecteuler.utils.Util;
+import lt.oworks.projecteuler.utils.Operation;
 
 /**
  * Largest product in a series
@@ -44,7 +44,7 @@ public class Problem8 extends Problem {
             int a4 = toInt(INPUT.charAt(i - 1));
             int a5 = toInt(INPUT.charAt(i - 0));
 
-            max = Util.max(max, Util.multiplyAll(a1, a2, a3, a4, a5));
+            max = Operation.max(max, Operation.multiplyAll(a1, a2, a3, a4, a5));
         }
 
         return Long.toString(max);

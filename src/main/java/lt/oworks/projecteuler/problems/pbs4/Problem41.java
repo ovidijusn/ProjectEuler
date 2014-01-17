@@ -1,6 +1,8 @@
 package lt.oworks.projecteuler.problems.pbs4;
 
 import lt.oworks.projecteuler.problems.Problem;
+import lt.oworks.projecteuler.utils.Digits;
+import lt.oworks.projecteuler.utils.Division;
 import lt.oworks.projecteuler.utils.Util;
 
 /**
@@ -19,7 +21,7 @@ public class Problem41 extends Problem {
         int rez = 0;
         for (int i = LIMIT; i > 0; i--) {
             final int len = ("" + i).length();
-            if (Util.isPandigital(i, len) && Util.isPrime(i)) {
+            if (Digits.isPandigital(i, len) && Division.isPrime(i)) {
                 rez = i;
                 break;
             }

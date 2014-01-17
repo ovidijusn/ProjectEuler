@@ -3,6 +3,7 @@ package lt.oworks.projecteuler.problems.pbs1;
 import lt.oworks.projecteuler.problems.Problem;
 import java.util.ArrayList;
 import java.util.List;
+import lt.oworks.projecteuler.utils.Operation;
 import lt.oworks.projecteuler.utils.Util;
 
 /**
@@ -38,7 +39,7 @@ public class Problem18 extends Problem {
         int sum = 0;
         doSearch(INPUT, 0, 0, 0);
         for (final int s : sums) {
-            sum = Util.max(sum, s);
+            sum = Operation.max(sum, s);
         }
         return Integer.toString(sum);
     }

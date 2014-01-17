@@ -1,6 +1,8 @@
 package lt.oworks.projecteuler.problems.pbs3;
 
 import lt.oworks.projecteuler.problems.Problem;
+import lt.oworks.projecteuler.utils.Digits;
+import lt.oworks.projecteuler.utils.Operation;
 import lt.oworks.projecteuler.utils.Util;
 
 /**
@@ -27,12 +29,12 @@ public class Problem38 extends Problem {
                     final long tmp = Long.parseLong(product.toString());
                     if (len == 9) {
 
-                        if (Util.isPandigital(tmp, 9)) {
-                            max = Util.max(tmp, max);
+                        if (Digits.isPandigital(tmp, 9)) {
+                            max = Operation.max(tmp, max);
                         } else {
                             break;
                         }
-                    } else if (!Util.isPandigital(tmp, len)) {
+                    } else if (!Digits.isPandigital(tmp, len)) {
                         break;
                     }
                 } else {

@@ -1,6 +1,8 @@
 package lt.oworks.projecteuler.problems.pbs3;
 
 import lt.oworks.projecteuler.problems.Problem;
+import lt.oworks.projecteuler.utils.Digits;
+import lt.oworks.projecteuler.utils.Division;
 import lt.oworks.projecteuler.utils.Util;
 
 /**
@@ -23,7 +25,7 @@ public class Problem33 extends Problem {
                 if (i >= j) {
                     continue;
                 }
-                final int[] digits = Util.toDigits(i);
+                final int[] digits = Digits.toDigits(i);
                 for (final int digit : digits) {
                     if (hasDigit(j, digit)) {
                         if (digit == 0) {
@@ -40,7 +42,7 @@ public class Problem33 extends Problem {
                 }
             }
         }
-        return Integer.toString(product2 / (Util.dbd(product1, product2)));
+        return Integer.toString(product2 / (Division.dbd(product1, product2)));
     }
 
     private boolean hasDigit(final int pNum, final int pDigit) {

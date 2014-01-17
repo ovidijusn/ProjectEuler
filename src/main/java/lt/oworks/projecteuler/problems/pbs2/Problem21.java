@@ -1,6 +1,8 @@
 package lt.oworks.projecteuler.problems.pbs2;
 
 import lt.oworks.projecteuler.problems.Problem;
+import lt.oworks.projecteuler.utils.Division;
+import lt.oworks.projecteuler.utils.Operation;
 import lt.oworks.projecteuler.utils.Util;
 
 /**
@@ -25,12 +27,12 @@ public class Problem21 extends Problem {
     }
 
     private boolean isAmicable(final long pNum) {
-        final long[] divs = Util.findDivisors(pNum);
-        final long sum = Util.addAll(divs) - divs[divs.length - 1];
+        final long[] divs = Division.findDivisors(pNum);
+        final long sum = Operation.addAll(divs) - divs[divs.length - 1];
         boolean result = false;
         if (pNum != sum) {
-            final long[] divs2 = Util.findDivisors(sum);
-            final long sum2 = Util.addAll(divs2) - divs2[divs2.length - 1];
+            final long[] divs2 = Division.findDivisors(sum);
+            final long sum2 = Operation.addAll(divs2) - divs2[divs2.length - 1];
             result = sum2 == pNum;
         }
         return result;

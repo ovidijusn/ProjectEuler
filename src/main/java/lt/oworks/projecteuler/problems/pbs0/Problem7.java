@@ -1,6 +1,7 @@
 package lt.oworks.projecteuler.problems.pbs0;
 
 import lt.oworks.projecteuler.problems.Problem;
+import lt.oworks.projecteuler.utils.Division;
 import lt.oworks.projecteuler.utils.Util;
 
 /**
@@ -20,7 +21,7 @@ public class Problem7 extends Problem {
 
         while (counter < LIMIT) {
             prime++;
-            if (Util.isPrime(prime)) {
+            if (Division.isPrime(prime)) {
                 counter++;
             }
         }

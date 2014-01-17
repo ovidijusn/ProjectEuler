@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
         final Problems p = new Problems();
-        //p.solveLast();
-        p.checkAllAnswers();
+        p.solveLast();
+        //p.checkAllAnswers();
     }
 }

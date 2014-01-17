@@ -1,6 +1,5 @@
 package lt.oworks.projecteuler.problems.pbs0;
 
-
 import lt.oworks.projecteuler.problems.Problem;
 import lt.oworks.projecteuler.utils.Util;
 
@@ -29,4 +28,8 @@ public class Problem7 extends Problem {
         return Long.toString(prime);
     }
 
+    @Override
+    public String getAnswer() {
+        return "104743";
+    }
 }

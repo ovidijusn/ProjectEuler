@@ -1,8 +1,8 @@
 package lt.oworks.projecteuler.problems.pbs2;
 
 import java.math.BigDecimal;
-import lt.oworks.projecteuler.utils.Util;
 import lt.oworks.projecteuler.problems.Problem;
+import lt.oworks.projecteuler.utils.Util;
 
 /**
  * Factorial digit sum
@@ -21,4 +21,8 @@ public class Problem20 extends Problem {
         return Util.digitSum(factor).toString();
     }
 
+    @Override
+    public String getAnswer() {
+        return "648";
+    }
 }

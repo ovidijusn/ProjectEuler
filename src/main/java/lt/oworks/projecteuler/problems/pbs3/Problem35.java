@@ -39,4 +39,8 @@ public class Problem35 extends Problem {
         return Long.toString(count);
     }
 
+    @Override
+    public String getAnswer() {
+        return "55";
+    }
 }

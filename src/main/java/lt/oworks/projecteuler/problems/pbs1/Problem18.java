@@ -55,4 +55,8 @@ public class Problem18 extends Problem {
 
     }
 
+    @Override
+    public String getAnswer() {
+        return "1074";
+    }
 }

@@ -29,4 +29,8 @@ public class Problem12 extends Problem {
         return Long.toString(result);
     }
 
+    @Override
+    public String getAnswer() {
+        return "76576500";
+    }
 }

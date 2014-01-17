@@ -16,7 +16,7 @@ public class Problem28 extends Problem {
     @Override
     public String solve() {
 
-        return Long.toString(Util.addAll(diagonal1(LIMIT)) + Util.addAll(diagonal2(LIMIT))-1);
+        return Long.toString(Util.addAll(diagonal1(LIMIT)) + Util.addAll(diagonal2(LIMIT)) - 1);
     }
 
     private long[] diagonal1(final int pSize) {
@@ -45,4 +45,8 @@ public class Problem28 extends Problem {
         return diag;
     }
 
+    @Override
+    public String getAnswer() {
+        return "669171001";
+    }
 }

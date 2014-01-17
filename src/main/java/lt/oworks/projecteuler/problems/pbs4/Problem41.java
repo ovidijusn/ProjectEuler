@@ -29,4 +29,8 @@ public class Problem41 extends Problem {
 
     }
 
+    @Override
+    public String getAnswer() {
+        return "7652413";
+    }
 }

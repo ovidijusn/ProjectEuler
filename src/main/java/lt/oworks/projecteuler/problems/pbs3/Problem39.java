@@ -1,7 +1,6 @@
 package lt.oworks.projecteuler.problems.pbs3;
 
 import lt.oworks.projecteuler.problems.Problem;
-import lt.oworks.projecteuler.utils.Util;
 
 /**
  * Integer right triangles
@@ -38,4 +37,8 @@ public class Problem39 extends Problem {
 
     }
 
+    @Override
+    public String getAnswer() {
+        return "840";
+    }
 }

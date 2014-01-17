@@ -19,13 +19,17 @@ public class Problem29 extends Problem {
     public String solve() {
         final Set<BigDecimal> terms = new HashSet<>();
         for (int a = 2; a <= LIMIT; a++) {
-            final  BigDecimal bdA = new BigDecimal(a);
+            final BigDecimal bdA = new BigDecimal(a);
             for (int b = 2; b <= LIMIT; b++) {
                 terms.add(bdA.pow(b));
             }
         }
-        
+
         return Integer.toString(terms.size());
     }
 
+    @Override
+    public String getAnswer() {
+        return "9183";
+    }
 }

@@ -20,14 +20,13 @@ public class Problem22 extends Problem {
     @Override
     public String solve() {
         long sum = 0;
-        System.out.println(getWordScore("COLIN"));
         try (final BufferedReader br = new BufferedReader(new InputStreamReader(Problem22.class.getResourceAsStream(INPUT)))) {
             final String[] names = br.readLine().split(",");
 
             for (int i = 0; i < names.length; i++) {
                 names[i] = names[i].trim().replaceAll("\"", "");
             }
-            
+
             Arrays.sort(names);
 
             for (int i = 0; i < names.length; i++) {
@@ -53,4 +52,8 @@ public class Problem22 extends Problem {
         return score;
     }
 
+    @Override
+    public String getAnswer() {
+        return "871198282";
+    }
 }

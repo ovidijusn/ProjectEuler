@@ -50,4 +50,9 @@ public class Problem24 extends Problem {
             }
         }
     }
+
+    @Override
+    public String getAnswer() {
+        return "2783915460";
+    }
 }

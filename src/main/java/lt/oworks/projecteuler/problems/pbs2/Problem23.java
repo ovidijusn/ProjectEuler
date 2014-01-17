@@ -1,6 +1,5 @@
 package lt.oworks.projecteuler.problems.pbs2;
 
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import lt.oworks.projecteuler.problems.Problem;
@@ -65,4 +64,8 @@ public class Problem23 extends Problem {
         return result;
     }
 
+    @Override
+    public String getAnswer() {
+        return "4179871";
+    }
 }

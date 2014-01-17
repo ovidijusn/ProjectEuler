@@ -27,4 +27,8 @@ public class Problem36 extends Problem {
         return Long.toString(sum);
     }
 
+    @Override
+    public String getAnswer() {
+        return "872187";
+    }
 }

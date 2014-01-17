@@ -8,14 +8,32 @@ public abstract class Problem {
 
     abstract public String solve();
 
-    public String doSolve() {
-
+    public final Result doSolve() {
         final long start = System.currentTimeMillis();
         final String result = solve();
         final long end = System.currentTimeMillis();
-        System.out.println("------------------------------------------------");
-        System.out.println("Solving time: " + (end - start) + " ms");
-        System.out.println("------------------------------------------------");
+        return new Result(end - start, result);
+    }
+
+    public String getAnswer() {
+        return null;
+    }
+
+    public boolean checkAnswer() {
+        boolean result = true;
+        String msg = this.getClass().getSimpleName() + ": ";
+        if (getAnswer() == null) {
+            System.err.println(msg + "not solved.");
+            result = false;
+        } else {
+            final String answer = solve();
+            if (getAnswer().equals(answer)) {
+                System.out.println(msg + "solved successfuly.");
+            } else {
+                System.err.println(msg + "bad answer, found: " + answer + ", but correct is " + getAnswer());
+                result = false;
+            }
+        }
         return result;
     }
 }

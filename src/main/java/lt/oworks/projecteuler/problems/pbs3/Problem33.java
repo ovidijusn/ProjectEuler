@@ -51,4 +51,8 @@ public class Problem33 extends Problem {
         return (pNum % 10 == pDigit) ? pNum / 10 : pNum % 10;
     }
 
+    @Override
+    public String getAnswer() {
+        return "100";
+    }
 }

@@ -33,4 +33,8 @@ public class Problem5 extends Problem {
         return Long.toString(product);
     }
 
+    @Override
+    public String getAnswer() {
+        return "232792560";
+    }
 }

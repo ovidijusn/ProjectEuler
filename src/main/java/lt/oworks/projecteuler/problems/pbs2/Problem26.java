@@ -71,4 +71,8 @@ public class Problem26 extends Problem {
         return rez;
     }
 
+    @Override
+    public String getAnswer() {
+        return "983";
+    }
 }

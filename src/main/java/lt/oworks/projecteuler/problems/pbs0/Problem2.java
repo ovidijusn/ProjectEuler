@@ -28,4 +28,8 @@ public class Problem2 extends Problem {
         return Integer.toString(sum);
     }
 
+    @Override
+    public String getAnswer() {
+        return "4613732";
+    }
 }

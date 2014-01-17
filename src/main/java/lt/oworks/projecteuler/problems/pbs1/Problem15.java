@@ -22,4 +22,9 @@ public class Problem15 extends Problem {
     private static BigDecimal binomial(final long a, final long b) {
         return Util.factorial(new BigDecimal(a)).divide(Util.factorial(new BigDecimal(a - b)).multiply(Util.factorial(new BigDecimal(a - b))));
     }
+
+    @Override
+    public String getAnswer() {
+        return "137846528820";
+    }
 }

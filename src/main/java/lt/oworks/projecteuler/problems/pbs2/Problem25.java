@@ -1,8 +1,6 @@
 package lt.oworks.projecteuler.problems.pbs2;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
 import lt.oworks.projecteuler.problems.Problem;
 
 /**
@@ -32,4 +30,8 @@ public class Problem25 extends Problem {
         return Long.toString(n);
     }
 
+    @Override
+    public String getAnswer() {
+        return "4782";
+    }
 }

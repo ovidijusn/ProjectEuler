@@ -28,4 +28,9 @@ public class Problem3 extends Problem {
         }
         return result.toString();
     }
+
+    @Override
+    public String getAnswer() {
+        return "6857";
+    }
 }

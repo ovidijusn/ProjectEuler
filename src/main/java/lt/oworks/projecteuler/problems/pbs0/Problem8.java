@@ -53,4 +53,9 @@ public class Problem8 extends Problem {
     private int toInt(final Character pDigit) {
         return Integer.parseInt(pDigit.toString());
     }
+
+    @Override
+    public String getAnswer() {
+        return "40824";
+    }
 }

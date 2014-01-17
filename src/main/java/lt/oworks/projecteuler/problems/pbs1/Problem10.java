@@ -18,7 +18,7 @@ public class Problem10 extends Problem {
 
         long sum = 2;
 
-        for (long i = 3; i < LIMIT-1; i+=2) {
+        for (long i = 3; i < LIMIT - 1; i += 2) {
             if (Util.isPrime(i)) {
                 sum += i;
             }
@@ -27,4 +27,8 @@ public class Problem10 extends Problem {
         return Long.toString(sum);
     }
 
+    @Override
+    public String getAnswer() {
+        return "142913828922";
+    }
 }

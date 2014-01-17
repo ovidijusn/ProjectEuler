@@ -19,4 +19,9 @@ public class Problem16 extends Problem {
         final BigDecimal power = new BigDecimal(2).pow(POWER);
         return Util.digitSum(power).toString();
     }
+
+    @Override
+    public String getAnswer() {
+        return "1366";
+    }
 }

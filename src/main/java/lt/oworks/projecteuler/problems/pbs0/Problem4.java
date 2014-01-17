@@ -43,4 +43,9 @@ public class Problem4 extends Problem {
     private boolean isPalindrome(final int pNumber) {
         return pNumber == reverse(pNumber);
     }
+
+    @Override
+    public String getAnswer() {
+        return "906609";
+    }
 }

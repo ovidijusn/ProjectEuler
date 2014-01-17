@@ -36,4 +36,8 @@ public class Problem27 extends Problem {
         return pN * pN + pA * pN + pB;
     }
 
+    @Override
+    public String getAnswer() {
+        return "-59231";
+    }
 }

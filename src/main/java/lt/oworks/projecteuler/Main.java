@@ -7,10 +7,8 @@ package lt.oworks.projecteuler;
 public class Main {
 
     public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
-
-        final String result = SolverFactory.solveProblem(41);
-
-        System.out.println("Result is " + result);
+        final Problems p = new Problems();
+        //p.solveLast();
+        p.checkAllAnswers();
     }
-
 }

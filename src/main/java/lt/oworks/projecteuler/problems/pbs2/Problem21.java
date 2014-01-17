@@ -19,7 +19,6 @@ public class Problem21 extends Problem {
         for (long i = 2; i < LIMIT; i++) {
             if (isAmicable(i)) {
                 sum += i;
-                System.out.println(i);
             }
         }
         return Long.toString(sum);
@@ -37,4 +36,8 @@ public class Problem21 extends Problem {
         return result;
     }
 
+    @Override
+    public String getAnswer() {
+        return "31626";
+    }
 }

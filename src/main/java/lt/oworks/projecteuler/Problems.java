@@ -103,5 +103,6 @@ public class Problems {
 
         addProblem(41, new Problem41());
         addProblem(42, new Problem42());
+        addProblem(43, new Problem43());
     }
 }

@@ -14,16 +14,16 @@ public class Problem44 extends Problem {
 
     @Override
     public void run() {
-        int result = 0;
+        long result = 0;
         boolean notFound = true;
         int i = 1;
 
         while (notFound) {
             i++;
-            int n = i * (3 * i - 1) / 2;
+            long n = getPentagonalNumber(i);
 
             for (int j = i - 1; j > 0; j--) {
-                int m = j * (3 * j - 1) / 2;
+                long m = getPentagonalNumber(j);
                 if (isPentagonNumber(n - m) && isPentagonNumber(n + m)) {
                     result = n - m;
                     notFound = false;
@@ -39,4 +39,7 @@ public class Problem44 extends Problem {
         return n == Math.round(n);
     }
 
+    public static long getPentagonalNumber(final long pNum) {
+        return pNum * (3 * pNum - 1) / 2;
+    }
 }

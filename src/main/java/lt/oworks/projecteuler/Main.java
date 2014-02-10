@@ -1,7 +1,7 @@
 package lt.oworks.projecteuler;
 
 import lt.oworks.projecteuler.nproblems.Problem;
-import lt.oworks.projecteuler.nproblems.impl.Problem44;
+import lt.oworks.projecteuler.nproblems.impl.Problem45;
 
 /**
  * @author Ovidijus
@@ -10,7 +10,7 @@ import lt.oworks.projecteuler.nproblems.impl.Problem44;
 public class Main {
 
     public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
-        Problem p = new Problem44();
+        Problem p = new Problem45();
         p.solve();
         System.out.println("Time: " + p.getMillis() + "ms");
         System.out.println("Result: " + p.getResult());

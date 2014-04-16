@@ -23,4 +23,14 @@ public class DivisionTest {
         Assert.assertFalse(Division.isPrime(4));
         Assert.assertFalse(Division.isPrime(100));
     }
+
+    @Test
+    public void testFindPrimeDivisors() {
+
+        Assert.assertArrayEquals(Division.findPrimeDivisors(2), new long[]{2});
+        Assert.assertArrayEquals(Division.findPrimeDivisors(5), new long[]{5});
+        Assert.assertArrayEquals(Division.findPrimeDivisors(6), new long[]{2, 3});
+        Assert.assertArrayEquals(Division.findPrimeDivisors(24), new long[]{2, 3});
+        Assert.assertArrayEquals(Division.findPrimeDivisors(60), new long[]{2, 3, 5});
+    }
 }

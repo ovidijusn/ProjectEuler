@@ -2,8 +2,6 @@ package lt.oworks.projecteuler.problems.pbs3;
 
 import lt.oworks.projecteuler.problems.Problem;
 import lt.oworks.projecteuler.utils.Digits;
-import lt.oworks.projecteuler.utils.Operation;
-import lt.oworks.projecteuler.utils.Util;
 
 /**
  * Pandigital multiples
@@ -30,7 +28,7 @@ public class Problem38 extends Problem {
                     if (len == 9) {
 
                         if (Digits.isPandigital(tmp, 9)) {
-                            max = Operation.max(tmp, max);
+                            max = Math.max(tmp, max);
                         } else {
                             break;
                         }

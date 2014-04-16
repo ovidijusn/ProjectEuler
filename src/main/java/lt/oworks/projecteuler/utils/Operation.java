@@ -8,13 +8,6 @@ import java.math.BigDecimal;
  */
 public class Operation {
 
-    public static int max(final int pNum1, final int pNum2) {
-        return pNum1 > pNum2 ? pNum1 : pNum2;
-    }
-
-    public static long max(final long pNum1, final long pNum2) {
-        return pNum1 > pNum2 ? pNum1 : pNum2;
-    }
 
     public static BigDecimal factorial(final BigDecimal pNum) {
         BigDecimal rez = BigDecimal.ONE;

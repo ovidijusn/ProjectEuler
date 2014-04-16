@@ -2,7 +2,6 @@ package lt.oworks.projecteuler.problems.pbs1;
 
 import lt.oworks.projecteuler.problems.Problem;
 import lt.oworks.projecteuler.utils.Division;
-import lt.oworks.projecteuler.utils.Util;
 
 /**
  * Highly divisible triangular number
@@ -30,8 +29,4 @@ public class Problem12 extends Problem {
         return Long.toString(result);
     }
 
-    @Override
-    public String getAnswer() {
-        return "76576500";
-    }
 }

@@ -109,8 +109,4 @@ public class Problem11 extends Problem {
         return newMat;
     }
 
-    @Override
-    public String getAnswer() {
-        return "70600674";
-    }
 }

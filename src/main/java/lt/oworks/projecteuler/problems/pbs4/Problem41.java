@@ -3,7 +3,6 @@ package lt.oworks.projecteuler.problems.pbs4;
 import lt.oworks.projecteuler.problems.Problem;
 import lt.oworks.projecteuler.utils.Digits;
 import lt.oworks.projecteuler.utils.Division;
-import lt.oworks.projecteuler.utils.Util;
 
 /**
  * Pandigital prime
@@ -31,8 +30,4 @@ public class Problem41 extends Problem {
 
     }
 
-    @Override
-    public String getAnswer() {
-        return "7652413";
-    }
 }

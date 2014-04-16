@@ -4,7 +4,6 @@ import java.util.HashSet;
 import java.util.Set;
 import lt.oworks.projecteuler.problems.Problem;
 import lt.oworks.projecteuler.utils.Digits;
-import lt.oworks.projecteuler.utils.Util;
 
 /**
  * Pandigital products
@@ -42,8 +41,4 @@ public class Problem32 extends Problem {
         return Long.toString(sum);
     }
 
-    @Override
-    public String getAnswer() {
-        return "45228";
-    }
 }

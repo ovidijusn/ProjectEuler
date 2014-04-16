@@ -4,7 +4,6 @@ import java.math.BigDecimal;
 import lt.oworks.projecteuler.problems.Problem;
 import lt.oworks.projecteuler.utils.Digits;
 import lt.oworks.projecteuler.utils.Operation;
-import lt.oworks.projecteuler.utils.Util;
 
 /**
  * Factorial digit sum
@@ -23,8 +22,4 @@ public class Problem20 extends Problem {
         return Digits.digitSum(factor).toString();
     }
 
-    @Override
-    public String getAnswer() {
-        return "648";
-    }
 }

@@ -2,7 +2,6 @@ package lt.oworks.projecteuler.problems.pbs0;
 
 import lt.oworks.projecteuler.problems.Problem;
 import lt.oworks.projecteuler.utils.Division;
-import lt.oworks.projecteuler.utils.Util;
 
 /**
  * Smallest multiple
@@ -34,8 +33,4 @@ public class Problem5 extends Problem {
         return Long.toString(product);
     }
 
-    @Override
-    public String getAnswer() {
-        return "232792560";
-    }
 }

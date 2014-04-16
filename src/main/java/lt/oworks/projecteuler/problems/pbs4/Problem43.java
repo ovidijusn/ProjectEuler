@@ -50,11 +50,6 @@ public class Problem43 extends Problem {
         return Long.toString(sum);
     }
 
-    @Override
-    public String getAnswer() {
-        return "16695334890";
-    }
-
     private static boolean isPandigital09(final long pNum) {
         boolean result = true;
         int count = 0;

@@ -2,7 +2,6 @@ package lt.oworks.projecteuler.problems.pbs3;
 
 import lt.oworks.projecteuler.problems.Problem;
 import lt.oworks.projecteuler.utils.Digits;
-import lt.oworks.projecteuler.utils.Util;
 
 /**
  * Double-base palindromes
@@ -28,8 +27,4 @@ public class Problem36 extends Problem {
         return Long.toString(sum);
     }
 
-    @Override
-    public String getAnswer() {
-        return "872187";
-    }
 }

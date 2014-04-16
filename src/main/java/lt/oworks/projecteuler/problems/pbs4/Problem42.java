@@ -48,11 +48,6 @@ public class Problem42 extends Problem {
 
     }
 
-    @Override
-    public String getAnswer() {
-        return "162";
-    }
-
     private static int getTriangleNumber(final int pNum) {
         return (pNum * (pNum + 1)) / 2;
     }

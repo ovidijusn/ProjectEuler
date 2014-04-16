@@ -3,7 +3,6 @@ package lt.oworks.projecteuler.problems.pbs1;
 import lt.oworks.projecteuler.problems.Problem;
 import java.math.BigDecimal;
 import lt.oworks.projecteuler.utils.Digits;
-import lt.oworks.projecteuler.utils.Util;
 
 /**
  * Power digit sum
@@ -21,8 +20,4 @@ public class Problem16 extends Problem {
         return Digits.digitSum(power).toString();
     }
 
-    @Override
-    public String getAnswer() {
-        return "1366";
-    }
 }

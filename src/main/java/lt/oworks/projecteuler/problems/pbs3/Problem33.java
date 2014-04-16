@@ -3,7 +3,6 @@ package lt.oworks.projecteuler.problems.pbs3;
 import lt.oworks.projecteuler.problems.Problem;
 import lt.oworks.projecteuler.utils.Digits;
 import lt.oworks.projecteuler.utils.Division;
-import lt.oworks.projecteuler.utils.Util;
 
 /**
  * Digit canceling fractions
@@ -53,8 +52,4 @@ public class Problem33 extends Problem {
         return (pNum % 10 == pDigit) ? pNum / 10 : pNum % 10;
     }
 
-    @Override
-    public String getAnswer() {
-        return "100";
-    }
 }

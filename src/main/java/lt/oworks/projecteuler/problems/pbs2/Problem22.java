@@ -52,8 +52,4 @@ public class Problem22 extends Problem {
         return score;
     }
 
-    @Override
-    public String getAnswer() {
-        return "871198282";
-    }
 }

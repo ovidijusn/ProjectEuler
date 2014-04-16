@@ -2,7 +2,6 @@ package lt.oworks.projecteuler.problems.pbs0;
 
 import lt.oworks.projecteuler.problems.Problem;
 import lt.oworks.projecteuler.utils.Division;
-import lt.oworks.projecteuler.utils.Util;
 
 /**
  * Largest prime factor
@@ -30,8 +29,4 @@ public class Problem3 extends Problem {
         return result.toString();
     }
 
-    @Override
-    public String getAnswer() {
-        return "6857";
-    }
 }

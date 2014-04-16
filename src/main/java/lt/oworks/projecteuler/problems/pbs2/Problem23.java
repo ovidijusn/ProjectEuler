@@ -4,7 +4,6 @@ import java.util.LinkedList;
 import java.util.List;
 import lt.oworks.projecteuler.problems.Problem;
 import lt.oworks.projecteuler.utils.Division;
-import lt.oworks.projecteuler.utils.Util;
 
 /**
  * Non-abundant sums
@@ -65,8 +64,4 @@ public class Problem23 extends Problem {
         return result;
     }
 
-    @Override
-    public String getAnswer() {
-        return "4179871";
-    }
 }

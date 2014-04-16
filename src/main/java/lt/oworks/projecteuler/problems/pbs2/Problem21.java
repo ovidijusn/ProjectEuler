@@ -3,7 +3,6 @@ package lt.oworks.projecteuler.problems.pbs2;
 import lt.oworks.projecteuler.problems.Problem;
 import lt.oworks.projecteuler.utils.Division;
 import lt.oworks.projecteuler.utils.Operation;
-import lt.oworks.projecteuler.utils.Util;
 
 /**
  * Amicable numbers
@@ -38,8 +37,4 @@ public class Problem21 extends Problem {
         return result;
     }
 
-    @Override
-    public String getAnswer() {
-        return "31626";
-    }
 }

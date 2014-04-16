@@ -24,8 +24,4 @@ public class Problem6 extends Problem {
         return Long.toString(sum2 - sum1);
     }
 
-    @Override
-    public String getAnswer() {
-        return "25164150";
-    }
 }

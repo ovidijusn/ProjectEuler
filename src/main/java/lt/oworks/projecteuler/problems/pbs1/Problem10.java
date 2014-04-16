@@ -2,7 +2,6 @@ package lt.oworks.projecteuler.problems.pbs1;
 
 import lt.oworks.projecteuler.problems.Problem;
 import lt.oworks.projecteuler.utils.Division;
-import lt.oworks.projecteuler.utils.Util;
 
 /**
  * Summation of primes
@@ -28,8 +27,4 @@ public class Problem10 extends Problem {
         return Long.toString(sum);
     }
 
-    @Override
-    public String getAnswer() {
-        return "142913828922";
-    }
 }

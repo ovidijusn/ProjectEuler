@@ -2,7 +2,6 @@ package lt.oworks.projecteuler.problems.pbs2;
 
 import lt.oworks.projecteuler.problems.Problem;
 import lt.oworks.projecteuler.utils.Operation;
-import lt.oworks.projecteuler.utils.Util;
 
 /**
  * Number spiral diagonals
@@ -46,8 +45,4 @@ public class Problem28 extends Problem {
         return diag;
     }
 
-    @Override
-    public String getAnswer() {
-        return "669171001";
-    }
 }

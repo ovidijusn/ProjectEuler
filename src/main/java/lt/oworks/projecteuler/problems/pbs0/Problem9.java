@@ -30,8 +30,4 @@ public class Problem9 extends Problem {
         return Integer.toString(result);
     }
 
-    @Override
-    public String getAnswer() {
-        return "31875000";
-    }
 }

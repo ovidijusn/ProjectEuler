@@ -36,8 +36,4 @@ public class Problem31 extends Problem {
 
     }
 
-    @Override
-    public String getAnswer() {
-        return "73682";
-    }
 }

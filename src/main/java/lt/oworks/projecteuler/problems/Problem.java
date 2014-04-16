@@ -14,26 +14,4 @@ public abstract class Problem {
         final long end = System.currentTimeMillis();
         return new Result(end - start, result);
     }
-
-    public String getAnswer() {
-        return null;
-    }
-
-    public boolean checkAnswer() {
-        boolean result = true;
-        String msg = this.getClass().getSimpleName() + ": ";
-        if (getAnswer() == null) {
-            System.err.println(msg + "not solved.");
-            result = false;
-        } else {
-            final String answer = solve();
-            if (getAnswer().equals(answer)) {
-                System.out.println(msg + "solved successfuly.");
-            } else {
-                System.err.println(msg + "bad answer, found: " + answer + ", but correct is " + getAnswer());
-                result = false;
-            }
-        }
-        return result;
-    }
 }

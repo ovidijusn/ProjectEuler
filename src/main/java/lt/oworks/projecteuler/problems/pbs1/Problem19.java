@@ -92,8 +92,4 @@ public class Problem19 extends Problem {
         return result;
     }
 
-    @Override
-    public String getAnswer() {
-        return "171";
-    }
 }

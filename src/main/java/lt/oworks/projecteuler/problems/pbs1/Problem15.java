@@ -3,7 +3,6 @@ package lt.oworks.projecteuler.problems.pbs1;
 import lt.oworks.projecteuler.problems.Problem;
 import java.math.BigDecimal;
 import lt.oworks.projecteuler.utils.Operation;
-import lt.oworks.projecteuler.utils.Util;
 
 /**
  * Lattice paths
@@ -24,8 +23,4 @@ public class Problem15 extends Problem {
         return Operation.factorial(new BigDecimal(a)).divide(Operation.factorial(new BigDecimal(a - b)).multiply(Operation.factorial(new BigDecimal(a - b))));
     }
 
-    @Override
-    public String getAnswer() {
-        return "137846528820";
-    }
 }

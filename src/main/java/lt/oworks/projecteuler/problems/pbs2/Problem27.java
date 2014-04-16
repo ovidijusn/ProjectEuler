@@ -2,7 +2,6 @@ package lt.oworks.projecteuler.problems.pbs2;
 
 import lt.oworks.projecteuler.problems.Problem;
 import lt.oworks.projecteuler.utils.Division;
-import lt.oworks.projecteuler.utils.Util;
 
 /**
  * Quadratic primes
@@ -35,10 +34,5 @@ public class Problem27 extends Problem {
 
     private long formula(final int pA, final int pB, final int pN) {
         return pN * pN + pA * pN + pB;
-    }
-
-    @Override
-    public String getAnswer() {
-        return "-59231";
     }
 }

@@ -81,8 +81,4 @@ public class Problem17 extends Problem {
         return rez.toString();
     }
 
-    @Override
-    public String getAnswer() {
-        return "21124";
-    }
 }

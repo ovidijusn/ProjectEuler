@@ -30,8 +30,4 @@ public class Problem25 extends Problem {
         return Long.toString(n);
     }
 
-    @Override
-    public String getAnswer() {
-        return "4782";
-    }
 }

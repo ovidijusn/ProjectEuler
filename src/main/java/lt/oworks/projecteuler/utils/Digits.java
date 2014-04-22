@@ -1,6 +1,10 @@
 package lt.oworks.projecteuler.utils;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 /**
  *
@@ -42,14 +46,51 @@ public class Digits {
     }
 
     public static int[] toDigits(final long pNum1) {
-        final int[] digits = new int[Long.toString(pNum1).length()];
+        int i = Long.toString(pNum1).length();
+        final int[] digits = new int[i];
         long tmp = pNum1;
-        int i = 0;
+        i--;
         while (tmp > 0) {
-            digits[i++] = (int) (tmp % 10);
+            digits[i--] = (int) (tmp % 10);
             tmp /= 10;
         }
+        if (pNum1 == 0) {
+            digits[0] = 0;
+        }
         return digits;
+    }
+
+    public static long[] getPermutations(final long pNum) {
+        if (pNum < 10) {
+            return new long[]{pNum};
+        } else {
+            final int[] digitsArray = Digits.toDigits(pNum);
+            final List<Integer> digits = new ArrayList<>();
+            final Set<Long> permutations = new TreeSet<>();
+            for (final int i : digitsArray) {
+                digits.add(i);
+            }
+            getPermutations(digits, permutations, "");
+            final long[] rez = new long[permutations.size()];
+            int i = 0;
+            for (final long p : permutations) {
+                rez[i++] = p;
+            }
+            return rez;
+        }
+
+    }
+
+    private static void getPermutations(final List<Integer> digits, final Set<Long> pNumbers, final String pNum) {
+        if (digits.size() > 1) {
+            digits.stream().forEach((d) -> {
+                final List<Integer> temp = new ArrayList<>(digits);
+                temp.remove(d);
+                getPermutations(temp, pNumbers, pNum + d);
+            });
+        } else {
+            pNumbers.add(Long.parseLong(pNum + digits.get(0)));
+        }
     }
 
     public static long shiftDigits(final long pNum) {
